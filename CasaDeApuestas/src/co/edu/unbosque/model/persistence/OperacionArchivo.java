@@ -13,6 +13,7 @@ import java.util.ArrayList;
 
 import co.edu.unbosque.model.Apostadores;
 import co.edu.unbosque.model.CasaDeApuestas;
+import co.edu.unbosque.model.Juegos;
 import co.edu.unbosque.model.SedesCasaDeApuestas;
 
 public class OperacionArchivo {
@@ -122,6 +123,39 @@ public class OperacionArchivo {
 			}
 		}
 		return sedesApuestas;
+	}
+	public void escribirEnArchivo3(ArrayList<Juegos> Juegos, File juegos) {
+		try {
+			salida = new ObjectOutputStream(new FileOutputStream(juegos));
+			salida.writeObject(Juegos);
+			salida.close();
+		} catch (FileNotFoundException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public ArrayList<Juegos> leerArchivo3(File juegos) {
+		ArrayList<Juegos> juegos1 = new ArrayList<Juegos>();
+		if (juegos.length() != 0) {
+			try {
+				entrada = new ObjectInputStream(new FileInputStream(juegos));
+				juegos1 = (ArrayList<Juegos>) entrada.readObject();
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return juegos1;
 	}
 
 
