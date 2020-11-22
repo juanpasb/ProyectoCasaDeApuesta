@@ -39,5 +39,17 @@ public class CasaDeApuestasDao {
 
 		return true;
 	}
+	public ArrayList<CasaDeApuestas> getCasaDeApuestas() {
+		return CasaDeApuestas;
+	}
+	public void setCasaDeApuestas(ArrayList<CasaDeApuestas> casaDeApuestas) {
+		CasaDeApuestas = casaDeApuestas;
+	}
+	public OperacionArchivo getOpArchivo() {
+		return opArchivo;
+	}
+	public void setOpArchivo(OperacionArchivo opArchivo) {
+		this.opArchivo = opArchivo;
+	}
 
 }

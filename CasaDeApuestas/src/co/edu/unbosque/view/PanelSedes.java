@@ -606,4 +606,13 @@ public class PanelSedes extends JFrame {
 		panel.add(etiqueta);
 	}
 
+	public JPanel getPanel() {
+		return panel;
+	}
+
+	public void setPanel(JPanel panel) {
+		this.panel = panel;
+	}
+	
+
 }

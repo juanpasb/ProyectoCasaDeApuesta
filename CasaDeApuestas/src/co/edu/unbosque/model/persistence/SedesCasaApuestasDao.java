@@ -15,4 +15,21 @@ public class SedesCasaApuestasDao {
 		sedesCasaApuesta.add(nuevaCasaApuestas);
         opArchivo.escribirEnArchivo2(sedesCasaApuesta, sedes);
     }
+
+	public ArrayList<SedesCasaDeApuestas> getSedesCasaApuesta() {
+		return sedesCasaApuesta;
+	}
+
+	public void setSedesCasaApuesta(ArrayList<SedesCasaDeApuestas> sedesCasaApuesta) {
+		this.sedesCasaApuesta = sedesCasaApuesta;
+	}
+
+	public OperacionArchivo getOpArchivo() {
+		return opArchivo;
+	}
+
+	public void setOpArchivo(OperacionArchivo opArchivo) {
+		this.opArchivo = opArchivo;
+	}
+	
 }

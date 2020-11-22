@@ -30,7 +30,7 @@ public class PanelCreacionCasa extends JFrame {
 
 		iniciarComponentes();
 		putImage();
-
+//se cambio de true
 		setVisible(true);
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -150,5 +150,62 @@ public class PanelCreacionCasa extends JFrame {
 		panel.add(etiqueta);
 
 	}
+
+	public JPanel getPanel() {
+		return panel;
+	}
+
+	public void setPanel(JPanel panel) {
+		this.panel = panel;
+	}
+
+	public JLabel getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(JLabel nombre) {
+		this.nombre = nombre;
+	}
+
+	public JTextField getNombreCasa() {
+		return nombreCasa;
+	}
+
+	public void setNombreCasa(JTextField nombreCasa) {
+		this.nombreCasa = nombreCasa;
+	}
+
+	public JTextField getPresupuestoTotal() {
+		return presupuestoTotal;
+	}
+
+	public void setPresupuestoTotal(JTextField presupuestoTotal) {
+		this.presupuestoTotal = presupuestoTotal;
+	}
+
+	public JButton getBoton() {
+		return boton;
+	}
+
+	public void setBoton(JButton boton) {
+		this.boton = boton;
+	}
+
+	public JComboBox getLista() {
+		return lista;
+	}
+
+	public void setLista(JComboBox lista) {
+		this.lista = lista;
+	}
+
+	public PanelSedes getPsedes() {
+		return psedes;
+	}
+
+	public void setPsedes(PanelSedes psedes) {
+		this.psedes = psedes;
+	}
+	
 
 }

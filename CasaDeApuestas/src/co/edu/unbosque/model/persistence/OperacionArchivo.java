@@ -72,12 +72,12 @@ public class OperacionArchivo {
 		}
 	}
 
-	public ArrayList<Apostadores> leerArchivo1(File config) {
-		ArrayList<Apostadores> casaApuestas = new ArrayList<Apostadores>();
+	public ArrayList<CasaDeApuestas> leerArchivo1(File config) {
+		 ArrayList<CasaDeApuestas> casaApuestas = new ArrayList<CasaDeApuestas>();
 		if (config.length() != 0) {
 			try {
 				entrada = new ObjectInputStream(new FileInputStream(config));
-				casaApuestas = (ArrayList<Apostadores>) entrada.readObject();
+				casaApuestas = (ArrayList<CasaDeApuestas>) entrada.readObject();
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -168,6 +168,22 @@ public class OperacionArchivo {
 		} catch (Exception e) {
 			System.out.println("Error a�adiendo al fichero " + e.getMessage());
 		}
+	}
+
+	public ObjectInputStream getEntrada() {
+		return entrada;
+	}
+
+	public void setEntrada(ObjectInputStream entrada) {
+		this.entrada = entrada;
+	}
+
+	public ObjectOutputStream getSalida() {
+		return salida;
+	}
+
+	public void setSalida(ObjectOutputStream salida) {
+		this.salida = salida;
 	}
 
 }

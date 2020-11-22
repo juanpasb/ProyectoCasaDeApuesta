@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 public class PanelBienvenida extends JFrame {
 
 	private JPanel panel;
-	private JButton boton;
+	public JButton boton;
 	private PanelCreacionCasa pcasa;
 
 	public PanelBienvenida() {
@@ -49,9 +49,9 @@ public class PanelBienvenida extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-
+				System.out.println("hola25");
 				pcasa = new PanelCreacionCasa();
-
+       
 			}
 
 		};
@@ -67,6 +67,30 @@ public class PanelBienvenida extends JFrame {
 		etiqueta.setIcon(new ImageIcon(imagen.getImage().getScaledInstance(600, 500, Image.SCALE_SMOOTH)));
 		panel.add(etiqueta);
 
+	}
+
+	public JPanel getPanel() {
+		return panel;
+	}
+
+	public void setPanel(JPanel panel) {
+		this.panel = panel;
+	}
+
+	public JButton getBoton() {
+		return boton;
+	}
+
+	public void setBoton(JButton boton) {
+		this.boton = boton;
+	}
+
+	public PanelCreacionCasa getPcasa() {
+		return pcasa;
+	}
+
+	public void setPcasa(PanelCreacionCasa pcasa) {
+		this.pcasa = pcasa;
 	}
 
 }

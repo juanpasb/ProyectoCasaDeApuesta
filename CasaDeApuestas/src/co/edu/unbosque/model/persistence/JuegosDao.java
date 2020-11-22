@@ -17,4 +17,20 @@ public class JuegosDao {
         opArchivo.escribirEnArchivo3(juego, juegos);
     }
 
+	public ArrayList<Juegos> getJuego() {
+		return juego;
+	}
+
+	public void setJuego(ArrayList<Juegos> juego) {
+		this.juego = juego;
+	}
+
+	public OperacionArchivo getOpArchivo() {
+		return opArchivo;
+	}
+
+	public void setOpArchivo(OperacionArchivo opArchivo) {
+		this.opArchivo = opArchivo;
+	}
+
 }

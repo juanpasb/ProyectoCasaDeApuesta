@@ -20,5 +20,17 @@ public class ApostadorDao {
         apostador.add(nuevoApostador);
         opArchivo.escribirEnArchivo(apostador, apostadores);
     }
+	public ArrayList<Apostadores> getApostador() {
+		return apostador;
+	}
+	public void setApostador(ArrayList<Apostadores> apostador) {
+		this.apostador = apostador;
+	}
+	public OperacionArchivo getOpArchivo() {
+		return opArchivo;
+	}
+	public void setOpArchivo(OperacionArchivo opArchivo) {
+		this.opArchivo = opArchivo;
+	}
 
 }
