@@ -20,8 +20,7 @@ public class PanelInfo extends JFrame {
 	public PanelInfo() {
 		
 		setTitle("help.exe");
-		setIconImage(Toolkit.getDefaultToolkit().getImage(PanelInfo.class.getResource("/Data/imgbin-casino-roulette-dSR8hGvak9gpe5b2Ds53Xy4bU_t.jpg")));
-		
+		setIconImage(Toolkit.getDefaultToolkit().getImage(PanelInfo.class.getResource("/ProyectoFinalApuestas/src/imgbin-casino-roulette-dSR8hGvak9gpe5b2Ds53Xy4bU_t.jpg")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 300, 600);
 		contentPane = new JPanel();
@@ -43,7 +42,7 @@ public class PanelInfo extends JFrame {
 		contentPane.add(lblInfo);
 		
 		JLabel lblFondo = new JLabel("");
-		lblFondo.setIcon(new ImageIcon("C:\\Users\\X_jdg\\Downloads\\ProyectoCasaDeApuesta-b2ee5028194e1214967abe2a9742ea44c1ca3d4b\\CasaDeApuestas\\Data\\UEBlogo.png"));
+		lblFondo.setIcon(new ImageIcon("/ProyectoFinalApuestas/src/UEBlogo.png"));
 		lblFondo.setBounds(10, 10, 266, 543);
 		contentPane.add(lblFondo);
 	}

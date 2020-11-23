@@ -26,7 +26,9 @@ public class PanelJuegos extends JFrame {
 	private JComboBox combo;
 	
 	public PanelJuegos() {
+		
 		setResizable(false);
+		setIconImage(Toolkit.getDefaultToolkit().getImage(PanelDatos.class.getResource("/ProyectoFinalApuestas/src/imgbin-casino-roulette-dSR8hGvak9gpe5b2Ds53Xy4bU_t.jpg")));
 		setTitle("Gestiondejuegos.exe");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 500, 500);
@@ -80,7 +82,7 @@ public class PanelJuegos extends JFrame {
 		contentPane.add(btnCreate);
 		
 		JLabel lblFondo = new JLabel("");
-		lblFondo.setIcon(new ImageIcon("C:\\Users\\X_jdg\\Downloads\\ProyectoCasaDeApuesta-b2ee5028194e1214967abe2a9742ea44c1ca3d4b\\CasaDeApuestas\\Data\\Fondo2.jpg"));
+		lblFondo.setIcon(new ImageIcon("/ProyectoFinalApuestas/src/Fondo2.jpg"));
 		lblFondo.setBounds(10, 10, 476, 452);
 		contentPane.add(lblFondo);
 	}

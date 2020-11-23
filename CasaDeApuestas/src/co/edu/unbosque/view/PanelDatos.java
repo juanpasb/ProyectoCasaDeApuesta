@@ -28,7 +28,7 @@ public class PanelDatos extends JFrame {
 	public PanelDatos() {
 		
 		setTitle("Gestiondeapostadores.exe");
-		setIconImage(Toolkit.getDefaultToolkit().getImage(PanelDatos.class.getResource("/Data/imgbin-casino-roulette-dSR8hGvak9gpe5b2Ds53Xy4bU_t.jpg")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(PanelDatos.class.getResource("/ProyectoFinalApuestas/src/imgbin-casino-roulette-dSR8hGvak9gpe5b2Ds53Xy4bU_t.jpg")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 500, 500);
 		contentPane = new JPanel();
@@ -124,7 +124,7 @@ public class PanelDatos extends JFrame {
 		contentPane.add(btnDelete);
 		
 		JLabel lblFondo = new JLabel("");
-		lblFondo.setIcon(new ImageIcon("C:\\Users\\X_jdg\\Downloads\\ProyectoCasaDeApuesta-b2ee5028194e1214967abe2a9742ea44c1ca3d4b\\CasaDeApuestas\\Data\\Fondo1.jpg"));
+		lblFondo.setIcon(new ImageIcon("/ProyectoFinalApuestas/src/Fondo1.jpg"));
 		lblFondo.setBounds(10, 10, 466, 437);
 		contentPane.add(lblFondo);
 		
