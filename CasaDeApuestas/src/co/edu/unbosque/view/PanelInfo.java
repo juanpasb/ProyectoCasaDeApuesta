@@ -16,7 +16,9 @@ import javax.swing.SwingConstants;
 public class PanelInfo extends JFrame {
 
 	private JPanel contentPane;
-
+/**
+ * Este metodo inicializa el panel info
+ */
 	public PanelInfo() {
 		
 		setTitle("help.exe");
@@ -46,11 +48,17 @@ public class PanelInfo extends JFrame {
 		lblFondo.setBounds(10, 10, 266, 543);
 		contentPane.add(lblFondo);
 	}
-
+/**
+ * Devuelve contentPane
+ * @Return contentPane
+ */
 	public JPanel getContentPane() {
 		return contentPane;
 	}
-
+/**
+ * Modifica contentPane
+ * @param contentPane
+ */
 	public void setContentPane(JPanel contentPane) {
 		this.contentPane = contentPane;
 	}

@@ -20,7 +20,9 @@ public class PanelSedes extends JFrame {
 	public PanelSedes() {
 
 	}
-
+/**
+ * Este emtodo sirve pa instanciar el panel cuando hay unaSede
+ */
 	public void unaSede() {
 
 		setSize(500, 500);
@@ -78,7 +80,9 @@ public class PanelSedes extends JFrame {
 		panel.add(etiqueta);
 
 	}
-
+	/**
+	 * Este emtodo sirve pa instanciar el panel cuando hay dosSede
+	 */
 	public void dosSedes() {
 
 		setSize(500, 500);
@@ -152,7 +156,9 @@ public class PanelSedes extends JFrame {
 		etiqueta.setIcon(new ImageIcon(imagen.getImage().getScaledInstance(500, 500, Image.SCALE_SMOOTH)));
 		panel.add(etiqueta);
 	}
-
+	/**
+	 * Este emtodo sirve pa instanciar el panel cuando hay tresSedea
+	 */
 	public void tresSedes() {
 
 		setSize(700, 700);
@@ -241,7 +247,9 @@ public class PanelSedes extends JFrame {
 		etiqueta.setIcon(new ImageIcon(imagen.getImage().getScaledInstance(700, 700, Image.SCALE_SMOOTH)));
 		panel.add(etiqueta);
 	}
-
+	/**
+	 * Este emtodo sirve pa instanciar el panel cuando hay cuatroSedes
+	 */
 	public void cuatroSedes() {
 
 		setSize(1000, 700);
@@ -346,7 +354,9 @@ public class PanelSedes extends JFrame {
 		etiqueta.setIcon(new ImageIcon(imagen.getImage().getScaledInstance(1000, 700, Image.SCALE_SMOOTH)));
 		panel.add(etiqueta);
 	}
-
+	/**
+	 * Este emtodo sirve pa instanciar el panel cuando hay cincoSedes
+	 */
 	public void cincoSedes() {
 
 		setSize(1000, 700);
@@ -468,7 +478,9 @@ public class PanelSedes extends JFrame {
 		etiqueta.setIcon(new ImageIcon(imagen.getImage().getScaledInstance(1000, 700, Image.SCALE_SMOOTH)));
 		panel.add(etiqueta);
 	}
-
+	/**
+	 * Este emtodo sirve pa instanciar el panel cuando hay seisSede
+	 */
 	public void seisSedes() {
 
 		setSize(1000, 700);
@@ -605,11 +617,17 @@ public class PanelSedes extends JFrame {
 		etiqueta.setIcon(new ImageIcon(imagen.getImage().getScaledInstance(1000, 700, Image.SCALE_SMOOTH)));
 		panel.add(etiqueta);
 	}
-
+/**
+ * Devuelve panel
+ * @return panel
+ */
 	public JPanel getPanel() {
 		return panel;
 	}
-
+/**
+ * Modifica panel
+ * @param panel
+ */
 	public void setPanel(JPanel panel) {
 		this.panel = panel;
 	}
