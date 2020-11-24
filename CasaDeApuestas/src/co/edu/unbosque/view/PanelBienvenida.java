@@ -15,7 +15,10 @@ public class PanelBienvenida extends JFrame {
 	private JPanel panel;
 	public JButton boton;
 	private PanelCreacionCasa pcasa;
-
+	
+/**
+ * Este metodo sirve para inicializar el panel bienvenida
+ */
 	public PanelBienvenida() {
 
 		setSize(500, 500);
@@ -30,7 +33,9 @@ public class PanelBienvenida extends JFrame {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 
 	}
-
+/**
+ * Este metodo agrega el contenido al panel
+ */
 	public void putPanel() {
 
 		panel = new JPanel();
@@ -38,7 +43,9 @@ public class PanelBienvenida extends JFrame {
 		this.getContentPane().add(panel);
 		botonEmpezar();
 	}
-
+/**
+ * Este metodo sirve para asignarle un oyente al boton empezar
+ */
 	public void botonEmpezar() {
 
 		JButton boton = new JButton("Empezar");
@@ -58,7 +65,9 @@ public class PanelBienvenida extends JFrame {
 
 		boton.addActionListener(listener);
 	}
-
+/**
+ * Este metodo agrega la imagen al panel
+ */
 	public void putImage() {
 
 		ImageIcon imagen = new ImageIcon("logoApuestas.jpg");
@@ -68,27 +77,45 @@ public class PanelBienvenida extends JFrame {
 		panel.add(etiqueta);
 
 	}
-
+/**
+ * Devuelve panel
+ * @return panel
+ */
 	public JPanel getPanel() {
 		return panel;
 	}
-
+/**
+ * Modifica panel
+ * @param panel
+ */
 	public void setPanel(JPanel panel) {
 		this.panel = panel;
 	}
-
+/**
+ * Devuelve boton
+ * @return boton
+ */
 	public JButton getBoton() {
 		return boton;
 	}
-
+/**
+ * Modifica boton
+ * @param boton
+ */
 	public void setBoton(JButton boton) {
 		this.boton = boton;
 	}
-
+/**
+ * Devuelve pcasa
+ * @return pcasa
+ */
 	public PanelCreacionCasa getPcasa() {
 		return pcasa;
 	}
-
+/**
+ * Modifica pcasa
+ * @param pcasa
+ */
 	public void setPcasa(PanelCreacionCasa pcasa) {
 		this.pcasa = pcasa;
 	}

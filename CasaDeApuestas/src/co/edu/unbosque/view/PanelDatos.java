@@ -25,6 +25,9 @@ public class PanelDatos extends JFrame {
 	private JTextField tFDirección;
 	private JTextField tFCel;
 	
+	/**
+	 * Este metodo sirve para inicializar el panel datos
+	 */
 	public PanelDatos() {
 		
 		setTitle("Gestiondeapostadores.exe");
@@ -129,51 +132,87 @@ public class PanelDatos extends JFrame {
 		contentPane.add(lblFondo);
 		
 	}
-
+/**
+ * Devuelve contentPane
+ * @return contentPane
+ */
 	public JPanel getContentPane() {
 		return contentPane;
 	}
-
+/**
+ * Modifica contentPane
+ * @param contentPane
+ */
 	public void setContentPane(JPanel contentPane) {
 		this.contentPane = contentPane;
 	}
-
+/**
+ * Devuelve tFName
+ * @return tFName
+ */
 	public JTextField gettFName() {
 		return tFName;
 	}
-
+/**
+ * Modifica tFName
+ * @param tFName
+ */
 	public void settFName(JTextField tFName) {
 		this.tFName = tFName;
 	}
-
+/**
+ * Devuelve tFCC
+ * @return tFCC
+ */
 	public JTextField gettFCC() {
 		return tFCC;
 	}
-
+/**
+ * Modifica tFCC
+ * @param tFCC
+ */
 	public void settFCC(JTextField tFCC) {
 		this.tFCC = tFCC;
 	}
-
+/**
+ * Devuelve tFSede
+ * @return tFSede
+ */
 	public JTextField gettFSede() {
 		return tFSede;
 	}
-
+/**
+ * Modifica tFSede
+ * @param tFSede
+ */
 	public void settFSede(JTextField tFSede) {
 		this.tFSede = tFSede;
 	}
-
+/**
+ * Devuelve tFDirección
+ * @return tFDirección
+ */
 	public JTextField gettFDirección() {
 		return tFDirección;
 	}
-
+/**
+ * Modifica tFDirección
+ * @param tFDirección
+ */
 	public void settFDirección(JTextField tFDirección) {
 		this.tFDirección = tFDirección;
 	}
-
+/**
+ * Devuelve tFCel
+ * @return tFCel
+ */
 	public JTextField gettFCel() {
 		return tFCel;
 	}
-
+/**
+ * Modifica tFCel 
+ * @param tFCel
+ */
 	public void settFCel(JTextField tFCel) {
 		this.tFCel = tFCel;
 	}

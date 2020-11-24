@@ -20,7 +20,9 @@ public class PanelCreacionCasa extends JFrame {
 	private JButton boton;
 	private JComboBox lista;
 	private PanelSedes psedes;
-
+/**
+ * Este metodo sirve para instanciar el panel CreacionCasa
+ */
 	public PanelCreacionCasa() {
 
 		setSize(500, 500);
@@ -36,7 +38,9 @@ public class PanelCreacionCasa extends JFrame {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 
 	}
-
+/**
+ * Este metodo sirve para iniciar los componentes del panel
+ */
 	public void iniciarComponentes() {
 
 		putPanel();
@@ -45,7 +49,9 @@ public class PanelCreacionCasa extends JFrame {
 		putTextFields();
 		putComboBox();
 	}
-
+/**
+ * Este metodo sirve para colocar el contenido en el panel
+ */
 	public void putPanel() {
 
 		panel = new JPanel();
@@ -53,7 +59,9 @@ public class PanelCreacionCasa extends JFrame {
 		this.getContentPane().add(panel);
 
 	}
-
+/**
+ * Este metodo sirve para colocar la estiquetas en el panel
+ */
 	public void putLabels() {
 
 		JLabel nombre = new JLabel("Ingrese el nombre de la casa");
@@ -69,7 +77,9 @@ public class PanelCreacionCasa extends JFrame {
 		panel.add(presupuesto);
 
 	}
-
+	/**
+	 * Este metodo sirve para colocar los cuadors de texto en el panel
+	 */
 	public void putTextFields() {
 
 		JTextField nombreCasa = new JTextField();
@@ -81,7 +91,9 @@ public class PanelCreacionCasa extends JFrame {
 		panel.add(presupuestoTotal);
 
 	}
-
+	/**
+	 * Este metodo sirve para colocar el boton en el panel
+	 */
 	public void putButtons() {
 		
 		PanelSedes psedes = new PanelSedes();
@@ -131,7 +143,9 @@ public class PanelCreacionCasa extends JFrame {
 		boton.addActionListener(listener);
 
 	}
-
+	/**
+	 * Este metodo sirve para agregar el JComboBox en el panel
+	 */
 	public void putComboBox() {
 
 		String[] sedes = { "1", "2", "3", "4", "5", "6" };
@@ -140,7 +154,9 @@ public class PanelCreacionCasa extends JFrame {
 		lista.setBounds(200, 150, 100, 30);
 		panel.add(lista);
 	}
-
+	/**
+	 * Este metodo sirve para colocar la imagen en el panel
+	 */
 	public void putImage() {
 
 		ImageIcon imagen = new ImageIcon("casaWall.jpeg");
@@ -150,59 +166,101 @@ public class PanelCreacionCasa extends JFrame {
 		panel.add(etiqueta);
 
 	}
-
+/**
+ * Devuelve panel
+ * @return panel
+ */
 	public JPanel getPanel() {
 		return panel;
 	}
-
+/**
+ * Modifica panel
+ * @param panel
+ */
 	public void setPanel(JPanel panel) {
 		this.panel = panel;
 	}
-
+/**
+ * Devuelve nombre
+ * @return nombre
+ */
 	public JLabel getNombre() {
 		return nombre;
 	}
-
+/**
+ * Modifica nombre
+ * @param nombre
+ */
 	public void setNombre(JLabel nombre) {
 		this.nombre = nombre;
 	}
-
+/**
+ * Devuelve nombreCasa
+ * @return nombreCasa
+ */
 	public JTextField getNombreCasa() {
 		return nombreCasa;
 	}
-
+/**
+ * Modifica nombreCasa
+ * @param nombreCasa
+ */
 	public void setNombreCasa(JTextField nombreCasa) {
 		this.nombreCasa = nombreCasa;
 	}
-
+/**
+ * Devuelve presupuestoTotal
+ * @return  presupuestoTotal
+ */
 	public JTextField getPresupuestoTotal() {
 		return presupuestoTotal;
 	}
-
+/**
+ * Modifica presupuestoTotal
+ * @param presupuestoTotal
+ */
 	public void setPresupuestoTotal(JTextField presupuestoTotal) {
 		this.presupuestoTotal = presupuestoTotal;
 	}
-
+/**
+ * Devuelve boton
+ * @return boton
+ */
 	public JButton getBoton() {
 		return boton;
 	}
-
+/**
+ * Modifica boton
+ * @param boton
+ */
 	public void setBoton(JButton boton) {
 		this.boton = boton;
 	}
-
+/**
+ * Devuelve lista
+ * @return lista
+ */
 	public JComboBox getLista() {
 		return lista;
 	}
-
+/**
+ * Modifica lista
+ * @param lista
+ */
 	public void setLista(JComboBox lista) {
 		this.lista = lista;
 	}
-
+/**
+ * Devuelve psedes
+ * @return psedes
+ */
 	public PanelSedes getPsedes() {
 		return psedes;
 	}
-
+/**
+ * Modifica psedes
+ * @param psedes
+ */
 	public void setPsedes(PanelSedes psedes) {
 		this.psedes = psedes;
 	}

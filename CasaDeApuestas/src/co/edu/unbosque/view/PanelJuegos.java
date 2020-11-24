@@ -25,6 +25,9 @@ public class PanelJuegos extends JFrame {
 	private JTextField tFPresup;
 	private JComboBox combo;
 	
+	/**
+	 * Este metodo sirve para inicializar el panel juegos
+	 */
 	public PanelJuegos() {
 		
 		setResizable(false);
@@ -86,35 +89,59 @@ public class PanelJuegos extends JFrame {
 		lblFondo.setBounds(10, 10, 476, 452);
 		contentPane.add(lblFondo);
 	}
-
+/**
+ * Devuelve contentPane
+ * @return contentPane
+ */
 	public JPanel getContentPane() {
 		return contentPane;
 	}
-
+/**
+ * Modifica contentPane
+ * @param contentPane
+ */
 	public void setContentPane(JPanel contentPane) {
 		this.contentPane = contentPane;
 	}
-
+/**
+ * Devuelve tFGame
+ * @return tFGame
+ */
 	public JTextField gettFGame() {
 		return tFGame;
 	}
-
+/**
+ * Modifica tFGame
+ * @param tFGame
+ */
 	public void settFGame(JTextField tFGame) {
 		this.tFGame = tFGame;
 	}
-
+/**
+ * Devuelve tFPresup
+ * @return tFPresup
+ */
 	public JTextField gettFPresup() {
 		return tFPresup;
 	}
-
+/**
+ * Modifica tFPresup
+ * @param tFPresup
+ */
 	public void settFPresup(JTextField tFPresup) {
 		this.tFPresup = tFPresup;
 	}
-
+/**
+ * Devuelve combo
+ * @return combo
+ */
 	public JComboBox getCombo() {
 		return combo;
 	}
-
+/**
+ * Modifica combo
+ * @param combo
+ */
 	public void setCombo(JComboBox combo) {
 		this.combo = combo;
 	}
