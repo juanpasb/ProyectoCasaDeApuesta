@@ -33,6 +33,25 @@ public class ApostadorDao {
         opArchivo.escribirEnArchivo(apostador, apostadores);
     }
 	/**
+	 * Este metodo sirve para dar la informacion de apostadores por sedes
+	 * <b>pre</b> LLenar todos los campos requeridos <br>
+	 * <b>post</b> Se mostrara la informacion de los apostadores por sedes<br>
+	 * @param sede es la sede donde se registro el apostador
+	 * @return contenido
+	 */
+	public String mostrarInfo(String sede) {
+		String contenido = "";
+		for (int i = 0; i < apostador.size(); i++) {
+			if (apostador.get(i).getSede().equals(sede)) {
+				contenido = "Nombre: " + apostador.get(i).getNombre() + "\n" + "cedula : " + apostador.get(i).getCedula()
+						+ "\n" + "Sede: " + apostador.get(i).getSede() + "\n" + "Celular: "
+						+ apostador.get(i).getCelular();
+
+			}
+		}
+		return contenido;
+	}
+	/**
 	 * Devuelve apostador
 	 * @return apostador
 	 */
