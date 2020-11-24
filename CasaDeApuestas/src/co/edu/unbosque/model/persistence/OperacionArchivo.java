@@ -185,7 +185,4 @@ public class OperacionArchivo {
 	public void setSalida(ObjectOutputStream salida) {
 		this.salida = salida;
 	}
-
 }
-
-//
