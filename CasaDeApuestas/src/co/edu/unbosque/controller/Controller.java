@@ -5,6 +5,8 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.text.ParseException;
 
+import javax.swing.JOptionPane;
+
 import co.edu.unbosque.model.persistence.ApostadorDao;
 import co.edu.unbosque.model.persistence.BalotoDao;
 import co.edu.unbosque.model.persistence.CasaDeApuestasDao;
@@ -62,6 +64,7 @@ public class Controller implements ActionListener {
 		sedesCasaApuestaDao.setSedesCasaApuesta(operacionArchivo.leerArchivo2(sedes));
 		// superAstro
 	}
+
 	public void actionListener(ActionListener escuchador) {
 		panelBienvenida.boton.addActionListener(escuchador);
 		pCasa.getBoton().addActionListener(escuchador);
@@ -73,19 +76,22 @@ public class Controller implements ActionListener {
 		if (panelBienvenida.boton == e.getSource()) {
 //			panelCreacionCasa.getPanel().setVisible(true);
 //			panelBienvenida.setVisible(false);
-		System.out.println("hola");
 		}
-		if (e.getActionCommand().equals("Crear")) {
-			System.out.println("dsfhjfds");
-		if(!pCasa.getNombreCasa().getText().equals("")&& !pCasa.getPresupuestoTotal().getText().equals("")) {
-			String nombre = pCasa.getNombreCasa().getText().toUpperCase();
-			String numSedes = pCasa.getPresupuestoTotal().getText().toUpperCase();
-			int presupuesto = Integer .parseInt(pCasa.getPresupuestoTotal().getText());
-			System.out.println("dsfhjfds");
+		if (e.getActionCommand().equals("Añadir")) {
+			if (!pCasa.getNombreCasa().getText().equals("") && !pCasa.getPresupuestoTotal().getText().equals("")) {
+				String nombre = pCasa.getNombreCasa().getText().toUpperCase();
+				String numSedes = pCasa.getPresupuestoTotal().getSelectedText();
+				int presupuesto = Integer.parseInt(pCasa.getPresupuestoTotal().getText());
+
+				casaDeApuestasDao.agregarCasaDeApuestas(nombre, numSedes, presupuesto, config);
+				JOptionPane.showMessageDialog(null, "Se agrego correctamente la casa de apuestas", "ERROR",
+						JOptionPane.ERROR_MESSAGE);
+			} else {
+				JOptionPane.showMessageDialog(null, "Verifique los datos", "ERROR", JOptionPane.ERROR_MESSAGE);
+			}
+
 		}
-	
-	}
-		
+
 	}
 
 }

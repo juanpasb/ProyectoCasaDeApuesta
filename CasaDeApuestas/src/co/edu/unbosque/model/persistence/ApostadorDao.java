@@ -52,6 +52,22 @@ public class ApostadorDao {
 		return contenido;
 	}
 	/**
+	 * Este metodo sirve para verificar que la cedula no este repetida
+	 * @param cedula
+	 * @return
+	 */
+	public boolean cedulaRepetida(String cedula) {
+		boolean re = false;
+		for (int i = 0; i < apostador.size(); i++) {
+			if (apostador.get(i).getCedula().equals(cedula)) {
+				re = true;
+			}
+		}
+		return re;
+	}
+	
+	
+	/**
 	 * Devuelve apostador
 	 * @return apostador
 	 */

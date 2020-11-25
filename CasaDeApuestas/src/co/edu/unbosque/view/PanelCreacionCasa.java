@@ -98,7 +98,7 @@ public class PanelCreacionCasa extends JFrame {
 		
 		PanelSedes psedes = new PanelSedes();
 
-		JButton boton = new JButton("Crear");
+		JButton boton = new JButton("Añadir");
 		boton.setBounds(205, 420, 100, 30);
 		panel.add(boton);
 
