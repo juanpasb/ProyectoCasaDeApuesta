@@ -299,6 +299,8 @@ public class PanelSedes extends JFrame {
 		JTextField numEmpleadosT = new JTextField();
 		numEmpleadosT.setBounds(310, 80, 100, 30);
 		panel.add(numEmpleadosT);
+		
+		
 
 		JTextField numEmpleadosT2 = new JTextField();
 		numEmpleadosT2.setBounds(310, 280, 100, 30);
@@ -594,6 +596,8 @@ public class PanelSedes extends JFrame {
 		JComboBox lista6 = new JComboBox(localidades);
 		lista6.setBounds(780, 470, 180, 30);
 		panel.add(lista6);
+		
+		
 
 		JButton crear = new JButton("Crear");
 		crear.setBounds(450, 620, 100, 30);
@@ -616,6 +620,8 @@ public class PanelSedes extends JFrame {
 		etiqueta.setBounds(0, 0, 1000, 700);
 		etiqueta.setIcon(new ImageIcon(imagen.getImage().getScaledInstance(1000, 700, Image.SCALE_SMOOTH)));
 		panel.add(etiqueta);
+		
+		
 	}
 /**
  * Devuelve panel

@@ -53,8 +53,8 @@ public class ApostadorDao {
 	}
 	/**
 	 * Este metodo sirve para verificar que la cedula no este repetida
-	 * @param cedula
-	 * @return
+	 * @param cedula es la cedula del usuario
+	 * @return re
 	 */
 	public boolean cedulaRepetida(String cedula) {
 		boolean re = false;
