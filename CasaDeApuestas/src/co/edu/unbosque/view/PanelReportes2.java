@@ -23,13 +23,14 @@ public class PanelReportes2 extends JFrame {
 
 	public PanelReportes2() {
 		setTitle("Reportes.exe");
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\X_jdg\\git\\ProyectoCasaDeApuesta\\CasaDeApuestas\\src\\imgbin-casino-roulette-dSR8hGvak9gpe5b2Ds53Xy4bU_t.jpg"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("imgbin-casino-roulette-dSR8hGvak9gpe5b2Ds53Xy4bU_t.jpg"));
 		setResizable(false);
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 600, 600);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setLocationRelativeTo(null);
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
@@ -47,8 +48,8 @@ public class PanelReportes2 extends JFrame {
 		btnLista3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				DefaultListModel apuestas = new DefaultListModel();
-				apuestas.addElement(""); /* Añadir archivo ordenado como: Detalle de apuestas realizadas por cliente y sede por fecha discriminada por día y/o por
-				mes y/o por año.*/
+				apuestas.addElement(""); /* Aï¿½adir archivo ordenado como: Detalle de apuestas realizadas por cliente y sede por fecha discriminada por dï¿½a y/o por
+				mes y/o por aï¿½o.*/
 			}
 		});
 		btnLista3.setFont(new Font("Microsoft YaHei", Font.BOLD, 15));
@@ -69,8 +70,8 @@ public class PanelReportes2 extends JFrame {
 		btnLista4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			DefaultListModel total = new DefaultListModel();
-			total.addElement(""); /* Añadir archivo ordenado como: Total, de apuestas por sede, y tipo de juego por fecha discriminada por día y/o por mes
-			y/o por año.*/
+			total.addElement(""); /* Aï¿½adir archivo ordenado como: Total, de apuestas por sede, y tipo de juego por fecha discriminada por dï¿½a y/o por mes
+			y/o por aï¿½o.*/
 			}
 		});
 		btnLista4.setFont(new Font("Microsoft YaHei", Font.BOLD, 15));
@@ -80,7 +81,8 @@ public class PanelReportes2 extends JFrame {
 		JButton btnSig = new JButton("SIGUIENTE");
 		btnSig.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				//setVisible(False) & PanelReportes2 setVisible(true);
+				PanelGraficos pgraf = new PanelGraficos();
+				pgraf.setVisible(true);
 				}
 		});
 		btnSig.setFont(new Font("Microsoft YaHei", Font.BOLD | Font.ITALIC, 15));
@@ -88,7 +90,7 @@ public class PanelReportes2 extends JFrame {
 		contentPane.add(btnSig);
 		
 		JLabel lblFondo = new JLabel("");
-		lblFondo.setIcon(new ImageIcon("C:\\Users\\X_jdg\\git\\ProyectoCasaDeApuesta\\CasaDeApuestas\\src\\32636f5ae775005bad7ae94503c93422.jpg"));
+		lblFondo.setIcon(new ImageIcon("32636f5ae775005bad7ae94503c93422.jpg"));
 		lblFondo.setBounds(10, 10, 576, 552);
 		contentPane.add(lblFondo);
 	}

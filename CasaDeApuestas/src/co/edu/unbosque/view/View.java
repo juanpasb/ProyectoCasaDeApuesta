@@ -25,6 +25,7 @@ public class View {
 		//pR.setVisible(true);
 		//pR2.setVisible(true);
 		//pG.setVisible(true);
+		//pB.setVisible(true);
 		
 		}
 	}	

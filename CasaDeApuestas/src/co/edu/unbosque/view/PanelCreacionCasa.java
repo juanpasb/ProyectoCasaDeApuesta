@@ -32,7 +32,6 @@ public class PanelCreacionCasa extends JFrame {
 
 		iniciarComponentes();
 		putImage();
-//se cambio de true
 		setVisible(false);
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -98,7 +97,7 @@ public class PanelCreacionCasa extends JFrame {
 		
 		PanelSedes psedes = new PanelSedes();
 
-		JButton boton = new JButton("Añadir");
+		JButton boton = new JButton("AÃ±adir");
 		boton.setBounds(205, 420, 100, 30);
 		panel.add(boton);
 

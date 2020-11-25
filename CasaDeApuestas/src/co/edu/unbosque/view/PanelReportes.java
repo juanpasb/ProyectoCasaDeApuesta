@@ -23,13 +23,14 @@ public class PanelReportes extends JFrame {
 
 	public PanelReportes() {
 		setResizable(false);
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\X_jdg\\git\\ProyectoCasaDeApuesta\\CasaDeApuestas\\src\\imgbin-casino-roulette-dSR8hGvak9gpe5b2Ds53Xy4bU_t.jpg"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("imgbin-casino-roulette-dSR8hGvak9gpe5b2Ds53Xy4bU_t.jpg"));
 		setTitle("Reportes.exe");
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 600, 600);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setLocationRelativeTo(null);
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
@@ -47,7 +48,7 @@ public class PanelReportes extends JFrame {
 		btnLista1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			DefaultListModel clientes = new DefaultListModel();
-			clientes.addElement(""); //Añadir archivo ordenado como: Listado de clientes por sede por fecha discriminada por día y/o por mes y/o por año.
+			clientes.addElement(""); //Aï¿½adir archivo ordenado como: Listado de clientes por sede por fecha discriminada por dï¿½a y/o por mes y/o por aï¿½o.
 			}
 		});
 		btnLista1.setFont(new Font("Microsoft YaHei", Font.BOLD, 15));
@@ -68,8 +69,8 @@ public class PanelReportes extends JFrame {
 		btnLista2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			DefaultListModel totalAp = new DefaultListModel ();
-			totalAp.addElement(""); /*Añadir archivo ordenado como: Valor total de apuestas por cliente por fecha discriminada por día y/o por mes y/o por
-			año.*/
+			totalAp.addElement(""); /*Aï¿½adir archivo ordenado como: Valor total de apuestas por cliente por fecha discriminada por dï¿½a y/o por mes y/o por
+			aï¿½o.*/
 			}
 		});
 		btnLista2.setFont(new Font("Microsoft YaHei", Font.BOLD, 15));
@@ -79,15 +80,16 @@ public class PanelReportes extends JFrame {
 		JButton btnSig = new JButton("SIGUIENTE");
 		btnSig.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-			//setVisible(False) & PanelReportes2 setVisible(true);
-			}
+				PanelReportes2 pR2 = new PanelReportes2();
+					pR2.setVisible(true);		
+				}
 		});
 		btnSig.setFont(new Font("Microsoft YaHei", Font.BOLD | Font.ITALIC, 15));
 		btnSig.setBounds(430, 512, 126, 29);
 		contentPane.add(btnSig);
 		
 		JLabel lblFondo = new JLabel("");
-		lblFondo.setIcon(new ImageIcon("C:\\Users\\X_jdg\\git\\ProyectoCasaDeApuesta\\CasaDeApuestas\\src\\32636f5ae775005bad7ae94503c93422.jpg"));
+		lblFondo.setIcon(new ImageIcon("32636f5ae775005bad7ae94503c93422.jpg"));
 		lblFondo.setBounds(10, 10, 566, 543);
 		contentPane.add(lblFondo);
 	}

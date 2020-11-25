@@ -24,17 +24,18 @@ public class PanelGraficos extends JFrame {
 	public PanelGraficos() {
 		
 		setResizable(false);
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\X_jdg\\git\\ProyectoCasaDeApuesta\\CasaDeApuestas\\src\\imgbin-casino-roulette-dSR8hGvak9gpe5b2Ds53Xy4bU_t.jpg"));
-		setTitle("Cuadrodemando.exe");
+		setIconImage(Toolkit.getDefaultToolkit().getImage("imgbin-casino-roulette-dSR8hGvak9gpe5b2Ds53Xy4bU_t.jpg"));
+		setTitle("Cuadro De Mando.exe");
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 600, 600);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setLocationRelativeTo(null);
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblVentas = new JLabel("Hist\u00F3rico de ventas:");
+		JLabel lblVentas = new JLabel("HistÃ³rico de ventas:");
 		lblVentas.setFont(new Font("Microsoft YaHei", Font.BOLD, 20));
 		lblVentas.setBounds(10, 10, 217, 36);
 		contentPane.add(lblVentas);
@@ -47,7 +48,7 @@ public class PanelGraficos extends JFrame {
 		btnLista1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				DefaultListModel ventas = new DefaultListModel();
-				ventas.addElement(""); // Añadir archivo ordenado como: Histórico de ventas de los últimos 5 días por sede.
+				ventas.addElement(""); // Aï¿½adir archivo ordenado como: Histï¿½rico de ventas de los ï¿½ltimos 5 dï¿½as por sede.
 			}
 		});
 		btnLista1.setFont(new Font("Microsoft YaHei", Font.BOLD, 15));
@@ -68,7 +69,7 @@ public class PanelGraficos extends JFrame {
 		btnTopSedes.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				DefaultListModel topSedes = new DefaultListModel();
-				topSedes.addElement(""); // Añadir archivo ordenado como: Top 5 de las sedes con mayores ventas realizadas
+				topSedes.addElement(""); // Aï¿½adir archivo ordenado como: Top 5 de las sedes con mayores ventas realizadas
 			}
 		});
 		btnTopSedes.setFont(new Font("Microsoft YaHei", Font.BOLD, 10));
@@ -89,7 +90,7 @@ public class PanelGraficos extends JFrame {
 		btnTopC.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				DefaultListModel topClientes = new DefaultListModel();
-				topClientes.addElement(""); // Añadir archivo ordenado como: Top 5 de los clientes con mayores apuestas ganadas
+				topClientes.addElement(""); // Aï¿½adir archivo ordenado como: Top 5 de los clientes con mayores apuestas ganadas
 			}
 		});
 		btnTopC.setFont(new Font("Microsoft YaHei", Font.BOLD, 10));
@@ -110,7 +111,7 @@ public class PanelGraficos extends JFrame {
 		btnTopAp.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				DefaultListModel topAp = new DefaultListModel();
-				topAp.addElement(""); // Añadir archivo ordenado como: Top 3 de los tipos de apuesta con mayores ganadores
+				topAp.addElement(""); // Aï¿½adir archivo ordenado como: Top 3 de los tipos de apuesta con mayores ganadores
 			}
 		});
 		btnTopAp.setFont(new Font("Microsoft YaHei", Font.BOLD, 10));
@@ -118,14 +119,14 @@ public class PanelGraficos extends JFrame {
 		contentPane.add(btnTopAp);
 		
 		JLabel lblFondo = new JLabel("");
-		lblFondo.setIcon(new ImageIcon("C:\\Users\\X_jdg\\git\\ProyectoCasaDeApuesta\\CasaDeApuestas\\src\\fondo-casino-tarjetas-doradas-brillantes_1017-23677.jpg"));
+		lblFondo.setIcon(new ImageIcon("fondo-casino-tarjetas-doradas-brillantes_1017-23677.jpg"));
 		lblFondo.setBounds(10, 10, 566, 543);
 		contentPane.add(lblFondo);
 		
 		JButton btnNewButton = new JButton("SALIR");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				//System.exit();
+				System.exit(1);
 				}
 		});
 		btnNewButton.setFont(new Font("Microsoft YaHei", Font.BOLD | Font.ITALIC, 10));

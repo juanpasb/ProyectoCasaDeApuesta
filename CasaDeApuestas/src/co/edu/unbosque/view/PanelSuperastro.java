@@ -1,12 +1,15 @@
 package co.edu.unbosque.view;
 
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class PanelSuperastro extends JFrame {
@@ -23,7 +26,7 @@ public class PanelSuperastro extends JFrame {
 			setResizable(false);
 
 			iniciarComponentes();
-			// putImage();
+			putImage();
 			setVisible(false);
 
 			setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -51,19 +54,19 @@ public class PanelSuperastro extends JFrame {
 			signo.setBounds(20, 50, 230, 30);
 			panel.add(signo);
 
-			JLabel primer = new JLabel("Elija el primer dígito");
+			JLabel primer = new JLabel("Elija el primer dï¿½gito");
 			primer.setBounds(20, 150, 230, 30);
 			panel.add(primer);
 
-			JLabel segundo = new JLabel("Elija el segundo dígito");
+			JLabel segundo = new JLabel("Elija el segundo dï¿½gito");
 			segundo.setBounds(20, 250, 230, 30);
 			panel.add(segundo);
 
-			JLabel tercero = new JLabel("Elija el tercer dígito");
+			JLabel tercero = new JLabel("Elija el tercer dï¿½gito");
 			tercero.setBounds(20, 350, 230, 30);
 			panel.add(tercero);
 
-			JLabel cuarto = new JLabel("Elija el cuarto dígito");
+			JLabel cuarto = new JLabel("Elija el cuarto dï¿½gito");
 			cuarto.setBounds(20, 450, 230, 30);
 			panel.add(cuarto);
 
@@ -72,15 +75,17 @@ public class PanelSuperastro extends JFrame {
 		public void botonSuerte() {
 
 			JButton boton = new JButton("Prueba tu Suerte");
-			boton.setBounds(205, 500, 170, 30);
+			boton.setBounds(220, 520, 170, 30);
 			panel.add(boton);
 
 			ActionListener listener = new ActionListener() {
 
 				@Override
 				public void actionPerformed(ActionEvent e) {
-					// ...
+					PanelReportes pR = new PanelReportes();
 
+					JOptionPane.showMessageDialog(null, "Apuesta realizada, Â¡ Buena suerte !");
+					pR.setVisible(true);
 				}
 
 			};
@@ -90,7 +95,7 @@ public class PanelSuperastro extends JFrame {
 
 		public void putComboBox() {
 
-			String[] signos = { "Acuario", "Piscis", "Aries", "Tauro", "Géminis", "Cáncer", "Leo", "Virgo", "Libra",
+			String[] signos = { "Acuario", "Piscis", "Aries", "Tauro", "Gï¿½minis", "Cï¿½ncer", "Leo", "Virgo", "Libra",
 					"Escorpio", "Sagitario", "Capricornio" };
 
 			signoslista = new JComboBox(signos);
@@ -100,20 +105,30 @@ public class PanelSuperastro extends JFrame {
 			String[] cifras = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 			cifra1 = new JComboBox(cifras);
-			cifra1.setBounds(200, 150, 50, 30);
+			cifra1.setBounds(200, 150, 80, 30);
 			panel.add(cifra1);
 
 			cifra2 = new JComboBox(cifras);
-			cifra2.setBounds(200, 250, 50, 30);
+			cifra2.setBounds(200, 250, 80, 30);
 			panel.add(cifra2);
 
 			cifra3 = new JComboBox(cifras);
-			cifra3.setBounds(200, 350, 50, 30);
+			cifra3.setBounds(200, 350, 80, 30);
 			panel.add(cifra3);
 
 			cifra4 = new JComboBox(cifras);
-			cifra4.setBounds(200, 450, 50, 30);
+			cifra4.setBounds(200, 450, 80, 30);
 			panel.add(cifra4);
+		}
+		
+		public void putImage() {
+
+			ImageIcon imagen = new ImageIcon("casaWall.jpeg");
+			JLabel etiqueta = new JLabel();
+			etiqueta.setBounds(0, 0, 600, 600);
+			etiqueta.setIcon(new ImageIcon(imagen.getImage().getScaledInstance(600, 600, Image.SCALE_SMOOTH)));
+			panel.add(etiqueta);
+
 		}
 
 	}

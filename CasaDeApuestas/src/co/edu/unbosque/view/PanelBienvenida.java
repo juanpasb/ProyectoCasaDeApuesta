@@ -22,7 +22,7 @@ public class PanelBienvenida extends JFrame {
 	public PanelBienvenida() {
 
 		setSize(500, 500);
-		setTitle("Bienvenido al programa de creación de casa de apuestas");
+		setTitle("Bienvenido al programa de creaciï¿½n de casa de apuestas");
 		setLocationRelativeTo(null);
 		setResizable(false);
 
@@ -47,7 +47,7 @@ public class PanelBienvenida extends JFrame {
  * Este metodo sirve para asignarle un oyente al boton empezar
  */
 	public void botonEmpezar() {
-
+		
 		JButton boton = new JButton("Empezar");
 		boton.setBounds(205, 420, 100, 30);
 		panel.add(boton);
@@ -56,9 +56,8 @@ public class PanelBienvenida extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				pcasa = new PanelCreacionCasa();
+				pcasa = new PanelCreacionCasa();	
 				pcasa.setVisible(true);
-			
 			}
 
 		};
