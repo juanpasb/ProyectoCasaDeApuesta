@@ -26,7 +26,7 @@ public class PanelCreacionCasa extends JFrame {
 	public PanelCreacionCasa() {
 
 		setSize(500, 500);
-		setTitle("CreaciÃ³n de los parÃ¡metros iniciales de la casa");
+		setTitle("Creación de los parámetros iniciales de la casa");
 		setLocationRelativeTo(null);
 		setResizable(false);
 
@@ -67,7 +67,7 @@ public class PanelCreacionCasa extends JFrame {
 		nombre.setBounds(20, 50, 230, 30);
 		panel.add(nombre);
 
-		JLabel sedes = new JLabel("Elija el nÃºmero de sedes");
+		JLabel sedes = new JLabel("Elija el número de sedes");
 		sedes.setBounds(20, 150, 230, 30);
 		panel.add(sedes);
 

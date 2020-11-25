@@ -22,7 +22,7 @@ public class PanelBienvenida extends JFrame {
 	public PanelBienvenida() {
 
 		setSize(500, 500);
-		setTitle("Bienvenido al programa de creaciï¿½n de casa de apuestas");
+		setTitle("Bienvenido al programa de creación de casa de apuestas");
 		setLocationRelativeTo(null);
 		setResizable(false);
 

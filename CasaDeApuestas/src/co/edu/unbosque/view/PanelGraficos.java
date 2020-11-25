@@ -35,7 +35,7 @@ public class PanelGraficos extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblVentas = new JLabel("HistÃ³rico de ventas:");
+		JLabel lblVentas = new JLabel("Histórico de ventas:");
 		lblVentas.setFont(new Font("Microsoft YaHei", Font.BOLD, 20));
 		lblVentas.setBounds(10, 10, 217, 36);
 		contentPane.add(lblVentas);

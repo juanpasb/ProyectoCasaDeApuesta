@@ -26,7 +26,7 @@ public class PanelSedes extends JFrame {
 		String a;
 
 		setSize(500, 500);
-		setTitle("Creaciï¿½n de los parï¿½metros de una sede");
+		setTitle("Creación de los parámetros de una sede");
 		setLocationRelativeTo(null);
 		setResizable(false);
 		setVisible(true);
@@ -37,11 +37,11 @@ public class PanelSedes extends JFrame {
 		panel.setLayout(null);
 		this.getContentPane().add(panel);
 
-		JLabel numEmpleados = new JLabel("Ingrese el nï¿½mero de empleados de la sede");
+		JLabel numEmpleados = new JLabel("Ingrese el número de empleados de la sede");
 		numEmpleados.setBounds(20, 150, 280, 30);
 		panel.add(numEmpleados);
 
-		JLabel sedes = new JLabel("Elija la ubicaciï¿½n (localidad) de la sede");
+		JLabel sedes = new JLabel("Elija la ubicación (localidad) de la sede");
 		sedes.setBounds(20, 250, 280, 30);
 		panel.add(sedes);
 
@@ -49,9 +49,9 @@ public class PanelSedes extends JFrame {
 		numEmpleadosT.setBounds(300, 150, 100, 30);
 		panel.add(numEmpleadosT);
 
-		String[] localidades = { "Antonio Nariï¿½o", "Barrios Unidos", "Bosa", "Chapinero", "Ciudad Bolivar", "Engativï¿½",
-				"Fontibï¿½n", "Kennedy", "La Candelaria", "Los Mï¿½rtires", "Puente Aranda", "Rafael Uribe Uribe",
-				"San Cristï¿½bal", "Santa Fe", "Suba", "Sumapaz", "Teusaquillo", "Tunjuelito", "Usaquï¿½n", "Usme" };
+		String[] localidades = { "Antonio Nariño", "Barrios Unidos", "Bosa", "Chapinero", "Ciudad Bolivar", "Engativa",
+				"Fontibón", "Kennedy", "La Candelaria", "Los Martires", "Puente Aranda", "Rafael Uribe Uribe",
+				"San Cristobal", "Santa Fe", "Suba", "Sumapaz", "Teusaquillo", "Tunjuelito", "Usaquén", "Usme" };
 
 		JComboBox lista = new JComboBox(localidades);
 		lista.setBounds(290, 250, 180, 30);
@@ -102,19 +102,19 @@ public class PanelSedes extends JFrame {
 		panel.setLayout(null);
 		this.getContentPane().add(panel);
 
-		JLabel numEmpleados = new JLabel("Ingrese el nï¿½mero de empleados de la sede 1");
+		JLabel numEmpleados = new JLabel("Ingrese el número de empleados de la sede 1");
 		numEmpleados.setBounds(20, 100, 300, 30);
 		panel.add(numEmpleados);
 
-		JLabel sedes = new JLabel("Elija la ubicaciï¿½n (localidad) de la sede 1");
+		JLabel sedes = new JLabel("Elija la ubicación (localidad) de la sede 1");
 		sedes.setBounds(20, 150, 280, 30);
 		panel.add(sedes);
 
-		JLabel numEmpleados2 = new JLabel("Ingrese el nï¿½mero de empleados de la sede 2");
+		JLabel numEmpleados2 = new JLabel("Ingrese el número de empleados de la sede 2");
 		numEmpleados2.setBounds(20, 250, 300, 30);
 		panel.add(numEmpleados2);
 
-		JLabel sedes2 = new JLabel("Elija la ubicaciï¿½n (localidad) de la sede 2");
+		JLabel sedes2 = new JLabel("Elija la ubicación (localidad) de la sede 2");
 		sedes2.setBounds(20, 300, 280, 30);
 		panel.add(sedes2);
 

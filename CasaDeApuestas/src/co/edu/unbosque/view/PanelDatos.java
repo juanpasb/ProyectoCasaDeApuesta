@@ -49,7 +49,7 @@ public class PanelDatos extends JFrame {
 		contentPane.add(tFNombre);
 		tFNombre.setColumns(10);
 		
-		JLabel lblCc = new JLabel("CÃ©dula:");
+		JLabel lblCc = new JLabel("Cédula:");
 		lblCc.setFont(new Font("Microsoft YaHei", Font.BOLD, 20));
 		lblCc.setOpaque(true);
 		lblCc.setBackground(Color.ORANGE);
@@ -73,7 +73,7 @@ public class PanelDatos extends JFrame {
 		contentPane.add(tFSede);
 		tFSede.setColumns(10);
 		
-		JLabel lblDireccion = new JLabel("DirecciÃ³n:");
+		JLabel lblDireccion = new JLabel("Dirección:");
 		lblDireccion.setFont(new Font("Microsoft YaHei", Font.BOLD, 20));
 		lblDireccion.setOpaque(true);
 		lblDireccion.setBackground(Color.ORANGE);
