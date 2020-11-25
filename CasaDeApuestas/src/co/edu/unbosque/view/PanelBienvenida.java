@@ -31,7 +31,7 @@ public class PanelBienvenida extends JFrame {
 		setVisible(true);
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-
+		
 	}
 /**
  * Este metodo agrega el contenido al panel
@@ -56,9 +56,9 @@ public class PanelBienvenida extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("hola25");
 				pcasa = new PanelCreacionCasa();
-       
+				
+				//pcasa.setVisible(true);
 			}
 
 		};

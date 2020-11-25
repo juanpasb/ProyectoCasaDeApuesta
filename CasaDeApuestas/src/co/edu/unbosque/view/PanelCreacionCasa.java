@@ -33,7 +33,7 @@ public class PanelCreacionCasa extends JFrame {
 		iniciarComponentes();
 		putImage();
 //se cambio de true
-		setVisible(true);
+		setVisible(false);
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 
