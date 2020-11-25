@@ -16,83 +16,88 @@ import java.awt.event.ActionEvent;
 
 public class PanelJuegos extends JFrame {
 
-	private JPanel cBXTipo;
-	private JTextField tFJuego;
-	private JTextField tFPresup;
+	private JPanel contentPane;
+	private JTextField tFNombre;
+	private JTextField tFPresupuesto;
 
 	public PanelJuegos() {
-		setResizable(false);
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 550, 550);
-		cBXTipo = new JPanel();
-		cBXTipo.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(cBXTipo);
-		cBXTipo.setLayout(null);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
 		
-		JLabel lblJuego = new JLabel("Nombre del juego:");
-		lblJuego.setFont(new Font("Microsoft YaHei", Font.BOLD, 20));
-		lblJuego.setBounds(10, 40, 209, 28);
-		cBXTipo.add(lblJuego);
+		JLabel lblNombre = new JLabel("Nombre del juego:");
+		lblNombre.setFont(new Font("Microsoft YaHei", Font.BOLD, 20));
+		lblNombre.setBounds(10, 35, 200, 44);
+		contentPane.add(lblNombre);
 		
-		tFJuego = new JTextField();
-		tFJuego.setBounds(229, 49, 228, 19);
-		cBXTipo.add(tFJuego);
-		tFJuego.setColumns(10);
+		tFNombre = new JTextField();
+		tFNombre.setBounds(209, 52, 221, 19);
+		contentPane.add(tFNombre);
+		tFNombre.setColumns(10);
 		
-		JComboBox comboBox = new JComboBox();
-		comboBox.setFont(new Font("Microsoft YaHei", Font.BOLD, 20));
-		comboBox.setBounds(10, 134, 282, 28);
-		cBXTipo.add(comboBox);
+		JComboBox cBxTipo = new JComboBox();
+		cBxTipo.setFont(new Font("Microsoft YaHei", Font.BOLD, 20));
+		cBxTipo.setBounds(220, 226, 282, 38);
+		contentPane.add(cBxTipo);
 		
-		comboBox.addItem("Chance");
-		comboBox.addItem("Chance");
-		comboBox.addItem("Chance");
 		
-		comboBox.setSelectedItem("Seleccione el tipo de juego");
+		cBxTipo.addItem("Chance");
+		cBxTipo.addItem("Loteria");
+		cBxTipo.addItem("Deportivo");
 		
-		JLabel lblPresup = new JLabel("Presupuesto asignado para el juego:");
-		lblPresup.setFont(new Font("Microsoft YaHei", Font.BOLD, 20));
-		lblPresup.setBounds(10, 330, 383, 36);
-		cBXTipo.add(lblPresup);
 		
-		tFPresup = new JTextField();
-		tFPresup.setBounds(388, 343, 96, 19);
-		cBXTipo.add(tFPresup);
-		tFPresup.setColumns(10);
+		JLabel lblPresupuesto = new JLabel("Presupuesto asignado para el juego:");
+		lblPresupuesto.setFont(new Font("Microsoft YaHei", Font.BOLD, 20));
+		lblPresupuesto.setBounds(10, 356, 379, 38);
+		contentPane.add(lblPresupuesto);
 		
-		JButton btnJugar = new JButton("JUGAR");
-		btnJugar.addActionListener(new ActionListener() {
+		tFPresupuesto = new JTextField();
+		tFPresupuesto.setBounds(387, 370, 115, 19);
+		contentPane.add(tFPresupuesto);
+		tFPresupuesto.setColumns(10);
+		
+		JButton btnCrear = new JButton("CREAR");
+		btnCrear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		btnJugar.setBounds(229, 416, 85, 21);
-		cBXTipo.add(btnJugar);
+		btnCrear.setBounds(10, 482, 85, 21);
+		contentPane.add(btnCrear);
 		
+		JButton btnSalir = new JButton("SALIR");
+		btnSalir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnSalir.setBounds(441, 482, 85, 21);
+		contentPane.add(btnSalir);
+		
+		JLabel lblTipo = new JLabel("Seleccione tipo de juego:");
+		lblTipo.setFont(new Font("Microsoft YaHei", Font.BOLD, 15));
+		lblTipo.setBounds(10, 232, 200, 30);
+		contentPane.add(lblTipo);
+		
+		
+				
 	}
 
-	public JPanel getcBXTipo() {
-		return cBXTipo;
+	public JTextField gettFNombre() {
+		return tFNombre;
 	}
 
-	public void setcBXTipo(JPanel cBXTipo) {
-		this.cBXTipo = cBXTipo;
+	public void settFNombre(JTextField tFNombre) {
+		this.tFNombre = tFNombre;
 	}
 
-	public JTextField gettFJuego() {
-		return tFJuego;
+	public JTextField gettFPresupuesto() {
+		return tFPresupuesto;
 	}
 
-	public void settFJuego(JTextField tFJuego) {
-		this.tFJuego = tFJuego;
+	public void settFPresupuesto(JTextField tFPresupuesto) {
+		this.tFPresupuesto = tFPresupuesto;
 	}
-
-	public JTextField gettFPresup() {
-		return tFPresup;
-	}
-
-	public void settFPresup(JTextField tFPresup) {
-		this.tFPresup = tFPresup;
-	}
-	
 }
